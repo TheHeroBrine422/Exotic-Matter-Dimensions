@@ -1091,7 +1091,7 @@ function updateStat(x) {
     document.getElementById("SSBBAxisCostReduction").style = ((g.axisCostDivisor==0)&&(g.axisCostExponent==1))?"display:none":"display:inline-block"
   } else if (x==9) {
     // Divisor table
-    document.getElementById("StatBreakdown9DiDarkYAxis").innerHTML = "× "+infFormat(g.darkYAxisEffect*g.realdarkYAxis)+"<span class='small'> ("+infFormat(g.darkYAxisEffect)+" ^ "+normFormat(g.realdarkYAxis)+")</span>
+    document.getElementById("StatBreakdown9DiDarkYAxis").innerHTML = "× "+infFormat(g.darkYAxisEffect*g.realdarkYAxis)+"<span class='small'> ("+infFormat(g.darkYAxisEffect)+" ^ "+normFormat(g.realdarkYAxis)+")</span>"
     output=g.darkYAxisEffect*g.realdarkYAxis
     document.getElementById("StatBreakdown9DiDarkYAxisT").innerHTML = infFormat(output,true)
     toggleTableRow("StatBreakdown9DiRDarkYAxis",((g.darkYAxisEffect!==0)&&(g.realdarkYAxis!==0))?"show":"hide")
