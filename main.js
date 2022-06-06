@@ -1075,7 +1075,7 @@ function updateStat(x) {
     output=g.Mastery12Effect*MasteryE(12)
     document.getElementById("StatBreakdown8DiMastery12T").innerHTML = infFormat(output,true)
     toggleTableRow("StatBreakdown8DiRMastery12",MasteryE(12)?"show":"hide")
-    document.getElementById("StatBreakdown8DiVAxis").innerHTML = "× "+infFormat(g.VAxisEffect*g.realVAxis)+"<span class='small'> ("+infFormat(g.VAxisEffect)+" ^ "+normFormat(g.realVAxis)+")</span>
+    document.getElementById("StatBreakdown8DiVAxis").innerHTML = "× "+infFormat(g.VAxisEffect*g.realVAxis)+"<span class='small'> ("+infFormat(g.VAxisEffect)+" ^ "+normFormat(g.realVAxis)+")</span>"
     output+=g.VAxisEffect*g.realVAxis
     document.getElementById("StatBreakdown8DiVAxisT").innerHTML = infFormat(output,true)
     toggleTableRow("StatBreakdown8DiRVAxis",((g.VAxisEffect!==0)&&(g.realVAxis!==0))?"show":"hide")
