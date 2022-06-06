@@ -866,7 +866,7 @@ function updateStat(x) {
     output+=g.Mastery51Effect*MasteryE(51)
     document.getElementById("StatBreakdown6XMastery51T").innerHTML = normFormat(output)
     toggleTableRow("StatBreakdown6XRMastery51",MasteryE(51)?"show":"hide")
-    document.getElementById("StatBreakdown6XDarkMatter").innerHTML = "+ "+normFormat(g.darkMatterFreeAxis*g.darkXAxis)+"<span class='small'> ("+normFormat(g.darkMatterFreeAxis)+" × "+normFormat(g.darkXAxis)+")</span>
+    document.getElementById("StatBreakdown6XDarkMatter").innerHTML = "+ "+normFormat(g.darkMatterFreeAxis*g.darkXAxis)+"<span class='small'> ("+normFormat(g.darkMatterFreeAxis)+" × "+normFormat(g.darkXAxis)+")</span>"
     output+=g.darkMatterFreeAxis*g.darkXAxis
     document.getElementById("StatBreakdown6XDarkMatterT").innerHTML = normFormat(output)
     toggleTableRow("StatBreakdown6XRDarkMatter",(g.darkXAxis>0)?"show":"hide")
